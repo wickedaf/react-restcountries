@@ -16,7 +16,7 @@ const CountryDetail = () => {
 
     if(countryInfo.length === 0){
         return (
-            <div className="App">
+            <div className="App mt-5">
                 <Spinner animation="grow" role="status">
                     <span className="sr-only">Loading...</span>
                 </Spinner>

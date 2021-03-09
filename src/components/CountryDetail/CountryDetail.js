@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Spinner } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 
 const CountryDetail = () => {
@@ -14,7 +15,13 @@ const CountryDetail = () => {
     }, [countryName]);
 
     if(countryInfo.length === 0){
-        return <h2 className="App">Data Loading...</h2>
+        return (
+            <div className="App">
+                <Spinner animation="grow" role="status">
+                    <span className="sr-only">Loading...</span>
+                </Spinner>
+            </div>
+        ) 
     }
     
     const {name, area, population} = countryInfo;

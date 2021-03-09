@@ -14,6 +14,7 @@ const Home = () => {
     return (
         <div>
             <h1 className="App">Country List</h1> 
+            <h3 className="App">Total Country {countries.length}</h3> 
             <div className="country-container">
             {
                 countries.map(country => <Country countryInfo={country}></Country>)

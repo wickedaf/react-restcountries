@@ -17,7 +17,7 @@ const Home = () => {
             <h3 className="App">Total Country {countries.length}</h3> 
             <div className="country-container">
             {
-                countries.map(country => <Country countryInfo={country}></Country>)
+                countries.map(country => <Country key={country.alpha3Code} countryInfo={country}></Country>)
             }
             </div>
         </div>

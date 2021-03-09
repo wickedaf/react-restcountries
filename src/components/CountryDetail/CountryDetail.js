@@ -30,7 +30,7 @@ const CountryDetail = () => {
     
     
     return (
-        <div className="App">
+        <div className="App mt-5">
             <h1>Country Detail</h1>
             <h3>Name: {name}</h3>
             <h3>Currency: {currency}</h3>

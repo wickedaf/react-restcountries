@@ -1,0 +1,12 @@
+.country-container{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+}
+
+.country-container div{
+    margin: 20px;
+    border: 1px solid black;
+    padding: 20px;
+
+}
